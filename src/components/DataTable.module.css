@@ -1,0 +1,73 @@
+.scroll {
+  width: 100%;
+  max-height: 460px;
+  overflow: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  -webkit-overflow-scrolling: touch;
+}
+
+.table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  font-size: 13.5px;
+}
+
+.th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: var(--surface-alt);
+  color: var(--text-muted);
+  text-align: left;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.td {
+  padding: 11px 16px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+  white-space: nowrap;
+  max-width: 320px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tr:hover .td {
+  background: var(--surface-alt);
+}
+
+.tr:last-child .td {
+  border-bottom: none;
+}
+
+/* Sticky index column, sits above scrolling body and under the header corner. */
+.indexCol {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background: var(--surface-alt);
+  min-width: 48px;
+  text-align: center;
+}
+
+.th.indexCol {
+  z-index: 3;
+}
+
+.indexCell {
+  color: var(--text-faint);
+  font-variant-numeric: tabular-nums;
+}
+
+.empty {
+  color: var(--text-faint);
+}

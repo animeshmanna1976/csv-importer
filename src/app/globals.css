@@ -1,0 +1,72 @@
+:root {
+  --bg: #f6f7f9;
+  --bg-elevated: #ffffff;
+  --surface: #ffffff;
+  --surface-alt: #f9fafb;
+  --border: #e5e7eb;
+  --border-strong: #d1d5db;
+  --text: #111827;
+  --text-muted: #6b7280;
+  --text-faint: #9ca3af;
+  --brand: #f97316;
+  --brand-strong: #ea580c;
+  --brand-soft: #fff1e8;
+  --success: #16a34a;
+  --success-soft: #dcfce7;
+  --danger: #dc2626;
+  --danger-soft: #fee2e2;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 8px 24px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.12);
+  --radius: 14px;
+  --radius-sm: 9px;
+}
+
+[data-theme="dark"] {
+  --bg: #0b0d12;
+  --bg-elevated: #141821;
+  --surface: #161b24;
+  --surface-alt: #1c222d;
+  --border: #262d3a;
+  --border-strong: #333c4d;
+  --text: #f3f4f6;
+  --text-muted: #9aa4b2;
+  --text-faint: #6b7480;
+  --brand: #fb923c;
+  --brand-strong: #f97316;
+  --brand-soft: #2a1c11;
+  --success: #4ade80;
+  --success-soft: #123021;
+  --danger: #f87171;
+  --danger-soft: #3a1717;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.4), 0 8px 24px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.5);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  -webkit-font-smoothing: antialiased;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+a {
+  color: var(--brand-strong);
+  text-decoration: none;
+}
