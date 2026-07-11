@@ -1,0 +1,11 @@
+node_modules
+.next
+.git
+.env
+.env*.local
+logs
+*.log
+.backendlog
+.devlog
+README.md
+public

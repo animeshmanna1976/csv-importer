@@ -1,0 +1,18 @@
+node:internal/modules/esm/resolve:271
+    throw new ERR_UNSUPPORTED_DIR_IMPORT(path, basePath, String(resolved));
+          ^
+
+Error [ERR_UNSUPPORTED_DIR_IMPORT]: Directory import '/home/animesh1976/Desktop/csvProj/src/lib/server/llm' is not supported resolving ES modules imported from /home/animesh1976/Desktop/csvProj/src/lib/server/extractor.js
+    at finalizeResolution (node:internal/modules/esm/resolve:271:11)
+    at moduleResolve (node:internal/modules/esm/resolve:952:10)
+    at defaultResolve (node:internal/modules/esm/resolve:1188:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:708:12)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:657:25)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:640:38)
+    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:264:38)
+    at ModuleJob._link (node:internal/modules/esm/module_job:168:49) {
+  code: 'ERR_UNSUPPORTED_DIR_IMPORT',
+  url: 'file:///home/animesh1976/Desktop/csvProj/src/lib/server/llm'
+}
+
+Node.js v20.20.2
