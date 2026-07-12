@@ -44,7 +44,7 @@ export async function extractWithGroq(headers, rows, { signal } = {}) {
     const body = await res.text().catch(() => "");
     const err = new Error(`Groq request failed (${res.status}): ${body.slice(0, 300)}`);
     err.status = res.status;
-    // 429 / 5xx are transient — mark so the extractor can retry before falling back.
+
     err.retryable = res.status === 429 || res.status >= 500;
     throw err;
   }
